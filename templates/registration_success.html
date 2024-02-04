@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Success</title>
+</head>
+<body>
+    <h2>Success!</h2>
+    <p>First Name: {{ first_name }}</p>
+    <p>Last Name: {{ last_name }}</p>
+    <p>Email: {{ email }}</p>
+    <p>Word Count in Uploaded File: {{ word_count }}</p>
+    <p><a href="{{ url_for('download_file', filename='uploaded') }}">Download Uploaded File</a></p>
+</body>
+</html>
